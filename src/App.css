@@ -51,7 +51,7 @@ body {
 }
 .App-form .Page-switcher a:hover, .App-form .Page-switcher a:focus {
   background: transparent;
-  padding: 0.7em;
+  padding: 0.68em;
   border: 2px solid #FAED25;
   color: #FAED25;
   transition: all ease-in 200ms;
@@ -74,6 +74,53 @@ body {
 }
 .App-form .Form-title a:not(.active) {
   color: #bcbcbc;
+}
+.App-form .Form-title a:hover, .App-form .Form-title a:focus {
+  color: #FAED25;
+  transition: all ease-in 150ms;
+}
+.App-form .Form-content {
+  margin-left: 28px;
+}
+.App-form .Form-content .Form-field {
+  margin: 1.5em 0;
+}
+.App-form .Form-content .Form-field:nth-child(3) {
+  margin-bottom: 0;
+}
+.App-form .Form-content .Form-field:nth-child(4) {
+  margin: 0;
+}
+.App-form .Form-content label {
+  color: white;
+  font-size: 1.2em;
+}
+.App-form .Form-content input:not([type=checkbox]) {
+  margin: 0.8em 0;
+  height: 2.5em;
+  padding-right: 1em;
+  width: 80%;
+  background-color: transparent;
+  border-bottom: 2px solid #bcbcbc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  color: white;
+}
+.App-form .Form-content input:not([type=checkbox]):focus {
+  border-bottom: 2px solid #FAED25;
+  box-shadow: 0 1px 0 0 #a79b1d;
+  transition: all ease-in 200ms;
+}
+.App-form .Form-content .Terms-link {
+  color: #bcbcbc;
+  text-decoration: none;
+}
+.App-form .Form-content .Terms-link:hover, .App-form .Form-content .Terms-link:focus {
+  color: #FAED25;
+  text-decoration: underline;
+  transition: all ease 200ms;
 }
 
 /*# sourceMappingURL=App.css.map */

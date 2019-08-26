@@ -43,7 +43,7 @@
       &:hover,
       &:focus
         background: transparent
-        padding: .7em
+        padding: .68em
         border: 2px solid $yellow
         color: $yellow
         transition: all ease-in 200ms
@@ -66,3 +66,52 @@
 
       &:not(.active)
         color: $white-ish
+
+      &:hover,
+      &:focus
+        color: $yellow
+        transition: all ease-in 150ms
+
+  .Form-content
+    margin-left: 28px
+
+    .Form-field
+      margin: 1.5em 0
+
+      &:nth-child(3)
+        margin-bottom: 0
+
+      &:nth-child(4)
+        margin: 0
+
+    label
+      color: white
+      font-size: 1.2em
+
+    input:not([type=checkbox])
+      margin: .8em 0
+      height: 2.5em
+      padding-right: 1em
+      width: 80%
+      background-color: transparent
+      border-bottom: 2px solid $white-ish
+      border-top: none
+      border-left: none
+      border-right: none
+      outline: none
+      color: white
+
+      &:focus
+        border-bottom: 2px solid $yellow
+        box-shadow: 0 1px 0 0 #a79b1d
+        transition: all ease-in 200ms
+
+    .Terms-link
+      color: $white-ish
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        color: $yellow
+        text-decoration: underline
+        transition: all ease 200ms
