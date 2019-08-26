@@ -28,5 +28,34 @@ body {
   width: 50%;
   height: 100vh;
 }
+.App-form .Page-switcher {
+  margin-top: 2em;
+  margin-right: 1em;
+  text-align: right;
+}
+.App-form .Page-switcher a {
+  color: #FAED25;
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: #5B5561;
+  padding: 1em;
+}
+.App-form .Page-switcher a.active {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+.App-form .Page-switcher a:not(.active) {
+  background-color: #9D8D8E;
+  color: #bcbcbc;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+.App-form .Page-switcher a:hover, .App-form .Page-switcher a:focus {
+  background: transparent;
+  padding: 0.85em;
+  border: 2px solid #FAED25;
+  color: #FAED25;
+  transition: all ease-in 200ms;
+}
 
 /*# sourceMappingURL=App.css.map */

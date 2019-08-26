@@ -10,8 +10,8 @@ function App() {
             </div>
             <div className="App-form">
                 <div className="Page-switcher">
-                    <a href="" className="Page-switcher-link active">sign up</a>
-                    <a href="" className="Page-switcher-link">sign in</a>
+                    <a href="#" className="Page-switcher-link active">Sign Up</a>
+                    <a href="#" className="Page-switcher-link">Sign In</a>
                 </div>
                 <div className="Form-title">
                     <a href="" className="Form-title-link">sign up</a> or

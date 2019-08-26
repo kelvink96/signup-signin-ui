@@ -19,4 +19,32 @@
   width: 50%
   height: 100vh
 
+  .Page-switcher
+    margin-top: 2em
+    margin-right: 1em
+    text-align: right
 
+    a
+      color: $yellow
+      text-decoration: none
+      font-size: 1.2em
+      background-color: $dark-grey
+      padding: 1em
+
+      &.active
+        border-top-left-radius: 2em
+        border-bottom-left-radius: 2em
+
+      &:not(.active)
+        background-color: $medium-grey
+        color: $white-ish
+        border-top-right-radius: 2em
+        border-bottom-right-radius: 2em
+
+      &:hover,
+      &:focus
+        background: transparent
+        padding: .85em
+        border: 2px solid $yellow
+        color: $yellow
+        transition: all ease-in 200ms
