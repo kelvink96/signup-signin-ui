@@ -62,7 +62,7 @@
 
       &.active
         color: white
-        border-bottom: 1px solid $yellow
+        border-bottom: 2px solid white
 
       &:not(.active)
         color: $white-ish
@@ -70,6 +70,7 @@
       &:hover,
       &:focus
         color: $yellow
+        border-bottom: 2px solid $yellow
         transition: all ease-in 150ms
 
   .Form-content
@@ -109,9 +110,41 @@
     .Terms-link
       color: $white-ish
       text-decoration: none
+      border-bottom: 2px solid $white-ish
+
 
       &:hover,
       &:focus
         color: $yellow
-        text-decoration: underline
+        text-decoration: none
+        border-bottom: 2px solid $yellow
         transition: all ease 200ms
+
+    .Signup-btn-container
+      button
+        padding: 1em 2em
+        border-radius: 1.5em
+        border: none
+        background: $brown
+        font-size: 1em
+        color: $yellow
+        margin-right: 1em
+
+        &:hover,
+        &:focus
+          background: transparent
+          border: 2px solid $yellow
+          padding: .85em 1.9em
+          transition: all ease 200ms
+
+      a
+        color: $white-ish
+        font-size: 1.2em
+        text-decoration: none
+        border-bottom: 2px solid $white-ish
+
+        &:hover,
+        &:focus
+          color: $yellow
+          transition: all ease-in 200ms
+          border-bottom: 2px solid $yellow
