@@ -14,8 +14,8 @@ function App() {
                     <a href="#" className="Page-switcher-link">Sign In</a>
                 </div>
                 <div className="Form-title">
-                    <a href="" className="Form-title-link">sign up</a> or
-                    <a href="" className="Form-title-link"> sign in</a>
+                    <a href="" className="Form-title-link">sign in</a> <small>or</small>&nbsp;
+                    <a href="" className="Form-title-link active">sign up</a>
                 </div>
                 <div className="Form-content">
                     <form action="" className="Form-fields">
