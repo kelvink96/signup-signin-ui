@@ -63,6 +63,7 @@ body {
 }
 .App-form .Form-title small {
   text-transform: lowercase;
+  color: #bcbcbc;
 }
 .App-form .Form-title a {
   color: #bcbcbc;
