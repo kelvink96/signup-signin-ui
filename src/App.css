@@ -33,19 +33,23 @@ body {
   text-align: right;
 }
 .App-form .Page-switcher a {
-  color: #FAED25;
   text-decoration: none;
   font-size: 1.2em;
-  background-color: #5B5561;
   padding: 0.4em 0.8em;
 }
 .App-form .Page-switcher a.active {
+  color: #FAED25;
+  background-color: #5B5561;
+}
+.App-form .Page-switcher a:not(.active) {
+  color: white;
+  background-color: #9D8D8E;
+}
+.App-form .Page-switcher a:first-child {
   border-top-left-radius: 2em;
   border-bottom-left-radius: 2em;
 }
-.App-form .Page-switcher a:not(.active) {
-  background-color: #9D8D8E;
-  color: #bcbcbc;
+.App-form .Page-switcher a:last-child {
   border-top-right-radius: 2em;
   border-bottom-right-radius: 2em;
 }

@@ -2,11 +2,13 @@ import React, {Component} from 'react';
 import {
     BrowserRouter as Router,
     Route,
+    NavLink,
     Link
 } from "react-router-dom";
 import logo from './logo.svg'
 import './App.css';
 import SignUpForm from "./pages/SignUpForm";
+import SignInForm from "./pages/SignInForm";
 
 function App() {
     return (
@@ -17,17 +19,17 @@ function App() {
                 </div>
                 <div className="App-form">
                     <div className="Page-switcher">
-                        <a href="#" className="Page-switcher-link active">Sign Up</a>
-                        <a href="#" className="Page-switcher-link">Sign In</a>
+                        <NavLink exact to="/" activeClassName="active" className="Page-switcher-link">Sign Up</NavLink>
+                        <NavLink to="/sign-in" activeClassName="active" className="Page-switcher-link">Sign In</NavLink>
                     </div>
                     <div className="Form-title">
-                        <Link to="/sign-in" className="Form-title-link">sign in</Link> <small>or</small>&nbsp;
-                        <a href="" className="Form-title-link active">sign up</a>
+                        <NavLink to="/sign-in" activeClassName="active" className="Form-title-link">sign in</NavLink>
+                        <small> or</small>&nbsp;
+                        <NavLink exact to="/" activeClassName="active" className="Form-title-link">sign up</NavLink>
                     </div>
                     <Route exact path="/" component={SignUpForm}>
                     </Route>
-                    <Route path="/sign-in">
-                        <h1>Sign In</h1>
+                    <Route path="/sign-in" component={SignInForm}>
                     </Route>
                 </div>
             </div>
